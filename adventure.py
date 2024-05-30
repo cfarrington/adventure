@@ -3,6 +3,27 @@ program_description='''
 An adventure game.
 '''
 
+# Basic navigation works, along with moving objects from place-to-place, and
+# an empty framework for more actions enabled by the presence of specific
+# objects.
+# Possible infrastructure directions:
+# - description of a room upon entering; maybe immoveable objects that define
+#   the character of a specific room
+# - better argument handling
+#   - error checking supplied values
+#   - prompt for missing values
+#   - complain about extra arguments
+# - a clean way to quit
+# - read map and object location info from a file
+# - 3d maps
+# - a regression testing framework
+# - multiple players?
+# Possible scenario enhancements:
+# - food and cooking to keep up health
+# - combining objects to make new objects or modify object state
+#   - key to unlock chest, or door to another room
+#   - assemble a tool from parts
+
 class Object:
     lookup = {}
     def __init__(self,name,actions):
